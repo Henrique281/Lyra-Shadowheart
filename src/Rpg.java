@@ -26,5 +26,7 @@ public class Rpg {
         
         // Realiza um ataque do Mago contra um alvo ("Inimigo") usando uma habilidade ("Bola de Fogo")
         mago.atacar("Inimigo", "Bola de Fogo");
+
+        //criar outro personagens e inimigos
     }
 }
