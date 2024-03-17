@@ -1,8 +1,8 @@
 import java.util.Random;
 
-public class Mago extends Heroina {
-    // Construtor da classe Mago
-    public Mago(String nome, int vida, int mp, String arma, int nivel, int força) {
+public class Arqueira extends Heroina {
+
+      public Arqueira(String nome, int vida, int mp, String arma, int nivel, int força) {
         // Chamada ao construtor da superclasse Personagem
         super(nome, vida, mp, arma, nivel, força);
     }
@@ -16,7 +16,7 @@ public class Mago extends Heroina {
         System.out.println("MP: " + mp);
         System.out.println("Arma: " + arma);
         System.out.println("Nível: " + nivel);
-        System.out.println("Força:" + forca);
+        System.out.println("Força: " + forca);
     }
 
     // Método para calcular o dano causado pelo mago

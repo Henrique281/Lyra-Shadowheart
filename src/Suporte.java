@@ -1,8 +1,7 @@
 import java.util.Random;
 
-public class Mago extends Heroina {
-    // Construtor da classe Mago
-    public Mago(String nome, int vida, int mp, String arma, int nivel, int força) {
+public class Suporte extends Heroina {
+      public Suporte(String nome, int vida, int mp, String arma, int nivel, int força) {
         // Chamada ao construtor da superclasse Personagem
         super(nome, vida, mp, arma, nivel, força);
     }
@@ -16,7 +15,7 @@ public class Mago extends Heroina {
         System.out.println("MP: " + mp);
         System.out.println("Arma: " + arma);
         System.out.println("Nível: " + nivel);
-        System.out.println("Força:" + forca);
+        System.out.println("Força: " + forca);
     }
 
     // Método para calcular o dano causado pelo mago
@@ -33,4 +32,21 @@ public class Mago extends Heroina {
         // Retorna o dano calculado
         return dano;
     }
+        
+        // Método para realizar um ataque
+    public void atacar(String alvo, String habilidade) {
+        // Calcula o dano usando o método calculaDano
+        int danoCausado = calculaDano();
+
+        // Verifica se uma habilidade específica é usada durante o ataque
+        if (habilidade.length() == 0) {
+            // Exibe o dano causado quando nenhuma habilidade específica é usada
+            System.out.format("%s infligiu (%d de dano) no %s!!!\n", nome, danoCausado, alvo);
+            System.out.println("\n \n");
+        } else {
+            // Exibe o uso de uma habilidade específica durante o ataque
+            System.out.format("%s usou a %s em um aliado!!!\n\n", nome, habilidade);
+        }
+    }
 }
+

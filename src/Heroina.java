@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class Personagem {
+public class Heroina {
     public String nome;
     public int vida;
     public int mp;
@@ -9,7 +9,7 @@ public class Personagem {
     public int forca;
 
     // Construtor com argumentos
-    public Personagem(String nome, int vida, int mp, String arma, int nivel, int forca) {
+    public Heroina(String nome, int vida, int mp, String arma, int nivel, int forca) {
         this.nome = nome;
         this.vida = vida;
         this.mp = mp;
@@ -25,7 +25,7 @@ public class Personagem {
         System.out.println("MP: " + mp);
         System.out.println("Arma: " + arma);
         System.out.println("Nível: " + nivel);
-        System.out.println("Força: " + forca);
+        System.out.println("Força:" + forca);
     }
 
     // Método para calcular o dano causado pelo personagem
@@ -54,7 +54,7 @@ public class Personagem {
             System.out.println("\n \n");
         } else {
             // Exibe o uso de uma habilidade específica durante o ataque
-            System.out.format("%s usou o %s contra %s!!!\n", nome, habilidade, alvo);
+            System.out.format("%s usou o %s contra %s!!!\n\n", nome, habilidade, alvo);
         }
     }
 }

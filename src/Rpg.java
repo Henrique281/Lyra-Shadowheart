@@ -2,7 +2,7 @@ public class Rpg {
     public static void main(String[] args) throws Exception {
        
         // Cria um objeto Personagem chamado Heroi
-        Personagem heroi = new Personagem(null, 0, 0, null, 0, 0);
+        Heroina heroi = new Heroina(null, 0, 0, null, 0, 0);
         
         // Define os atributos do Herói
         heroi.nome = "Lyra";
@@ -27,6 +27,24 @@ public class Rpg {
         // Realiza um ataque do Mago contra um alvo ("Inimigo") usando uma habilidade ("Bola de Fogo")
         mago.atacar("Inimigo", "Bola de Fogo");
 
-        //criar outro personagens e inimigos
+        Arqueira arqueira = new Arqueira("Jena", 90, 20, "Arco simples", 8, 45);
+        
+        // Exibe o status do Mago
+        arqueira.mostraStatus();
+        
+        // Realiza um ataque do Mago contra um alvo ("Inimigo") usando uma habilidade ("Bola de Fogo")
+        arqueira.atacar("Inimigo", "");
+        
+
+        Suporte suporte = new Suporte("Ciel", 50, 180, "Bastão de cura", 13,7);
+        
+        // Exibe o status do Mago
+        suporte.mostraStatus();
+        
+        // Realiza um ataque do Mago contra um alvo ("Inimigo") usando uma habilidade ("Bola de Fogo")
+        suporte.atacar("Inimigo", "Cura");
+        
+
+      
     }
 }
