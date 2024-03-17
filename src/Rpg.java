@@ -1,17 +1,9 @@
 public class Rpg {
     public static void main(String[] args) throws Exception {
        
-        // Cria um objeto Personagem chamado Heroi
-        Heroina heroi = new Heroina(null, 0, 0, null, 0, 0);
+        // Cria um objeto Heroina chamado heroi
+        Heroina heroi = new Heroina("Lyra", 100, 50, "Masamune", 5, 17);
         
-        // Define os atributos do Herói
-        heroi.nome = "Lyra";
-        heroi.vida = 100;
-        heroi.mp = 50;
-        heroi.arma = "Masamune";
-        heroi.nivel = 5;
-        heroi.forca = 17;
-
         // Exibe o status do Herói
         heroi.mostraStatus();
         
@@ -19,7 +11,7 @@ public class Rpg {
         heroi.atacar("Morgrath", "");
 
         // Cria um objeto Mago chamado mago
-        Mago mago = new Mago("Merlin", 120, 80, "Cajado Mágico", 10, 25);
+        Mago mago = new Mago("José", 120, 80, "Cajado Mágico", 10, 25);
         
         // Exibe o status do Mago
         mago.mostraStatus();
@@ -27,24 +19,23 @@ public class Rpg {
         // Realiza um ataque do Mago contra um alvo ("Inimigo") usando uma habilidade ("Bola de Fogo")
         mago.atacar("Inimigo", "Bola de Fogo");
 
+        // Cria um objeto Arqueira chamado arqueira
         Arqueira arqueira = new Arqueira("Jena", 90, 20, "Arco simples", 8, 45);
         
-        // Exibe o status do Mago
+        // Exibe o status da Arqueira
         arqueira.mostraStatus();
         
-        // Realiza um ataque do Mago contra um alvo ("Inimigo") usando uma habilidade ("Bola de Fogo")
+        // Realiza um ataque da Arqueira contra um alvo ("Inimigo") usando uma habilidade vazia ("")
         arqueira.atacar("Inimigo", "");
-        
 
-        Suporte suporte = new Suporte("Ciel", 50, 180, "Bastão de cura", 13,7);
+        // Cria um objeto Suporte chamado suporte
+        Suporte suporte = new Suporte("Ciel", 50, 180, "Bastão de cura", 13, 7);
         
-        // Exibe o status do Mago
+        // Exibe o status do Suporte
         suporte.mostraStatus();
         
-        // Realiza um ataque do Mago contra um alvo ("Inimigo") usando uma habilidade ("Bola de Fogo")
+        // Realiza um ataque do Suporte contra um alvo ("Inimigo") usando uma habilidade ("Cura")
         suporte.atacar("Inimigo", "Cura");
-        
-
-      
     }
 }
+
